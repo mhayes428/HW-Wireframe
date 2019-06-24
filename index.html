@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
+  
   box-sizing: border-box;
 }
 
@@ -39,32 +40,58 @@ nav ul {
 
 article {
   float: left;
-  padding: 20px;
-  width: 48%;
+  padding: 0px;
+  width: 100%;
   background-color: #777;
   height: 300px;
+  text-align: center;
+  h1
 }
 
 aside {
-  float:right;
+  text-align: center;
+  float: right;
   padding: 20px;
-  width: 48%;
+  width: 50%;
   background-color: #f1f1f1;
-  height: 300px;
+  height: 380px;
+  border: 5px solid gray;
 }
 
 section:after {
-  content: "";
+  /*content: "";*/
   display: table;
   clear: both;
 }
 
+section {
+  display: table;
+  content: "";
+  text-align: center;
+  background-color: #f1f1f1;
+}
 
 footer {
   background-color: #777;
   padding: 10px;
   text-align: center;
   color: limegreen;
+}
+
+section {
+    width: 50%;
+    padding: 0px;
+    border: 5px solid gray;
+    margin: 0;
+}
+
+ .aside {
+    width: 50%;
+    padding: 0px;
+    border: 5px solid gray;
+    margin: 0;
+
+
 }
 
 </style>
@@ -79,14 +106,21 @@ footer {
 <h1>Nav</h1>
   </nav>
 
-<section><h1>Section</h1>
-  <article><h1>Article</h1>
-    <h2>h1, h2, h3</h2>
-    <p>I like to game, do outdoorsy things, such as fish and hike, and just relax.</p>
-    <p>I was born in Danvers, but I now live in Gloucester as of March, 2019. I'll admit this assignment was pretty challenging!</p>
-  </article>
-  <aside>Aside</aside>
-</section>
+<div id="aside">
+    <aside>
+        <h1></h1><strong>Aside</strong>
+    </aside>
+</div>
+
+<div id="section">
+    <section><h1>Section</h1>
+        <article><h1>Article</h1>
+                <h2>h1, h2, h3</h2>
+    <p>Spicy jalapeno bacon ipsum dolor amet tongue meatball ham turkey tri-tip andouille sausage prosciutto bresaola spare ribs. Pastrami beef ribs leberkas shank pork belly strip steak tongue burgdoggen turkey. Turducken chicken chuck burgdoggen spare ribs hamburger pancetta ground round. Biltong filet mignon chicken kielbasa. Venison fatback picanha, sirloin pig short ribs chuck biltong. Prosciutto ground round chicken chuck buffalo sirloin bresaola pork belly pig tri-tip capicola. Doner spare ribs short ribs, turducken shank andouille sausage strip steak short loin leberkas bacon pastrami ball tip pancetta tail.</p>
+        </article>
+    </section>
+</div>
+
 
 <footer>
   <p><(^^<) <( ^^ )> (>^^)></p>
